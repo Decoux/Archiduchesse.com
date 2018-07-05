@@ -110,7 +110,7 @@ header{
 }
 
 .logo-archi{
-  width: 281px;
+  width: 230px;
   margin: 0 auto;
 }
 
@@ -255,6 +255,73 @@ footer > .logo-liens{
 footer > p {
   font-size: 12px;
 }
+
+
+/*CSS blog.html*/
+.header-blog{
+  background-color: white;
+  width: 100%;
+  height: 45px;
+
+}
+.header-blog > .logo_archi{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.header-blog > .logo_archi > img{
+  height: 100%;
+}
+.article > .content > .author > .title{
+  font-size: 15px;
+  color: Black;
+}
+.article > .content > .author > p, a{
+  font-size: 11px;
+  text-decoration: none;
+  color: #777;
+}
+.article > .content > .block1 > p{
+  font-size: 11px;
+  color: #777;
+}
+.content > .block1{
+  width: 100%
+}
+.content > .block1 > img{
+  width: 100%;
+}
+.content > .block2{
+  width: 100%
+}
+.content > .block2 > img{
+  width: 100%;
+}
+.article > .content > .block2 > p{
+  font-size: 11px;
+  color: #777;
+}
+.content > .block3{
+  width: 100%
+}
+.content > .block3 > img{
+  width: 100%;
+}
+.article > .content > .block3 > p{
+  font-size: 11px;
+  color: #777;
+}
+.content > .block4{
+  width: 100%
+}
+.content > .block4 > iframe{
+  max-width: 100%;
+}
+.article > .content > .block4 > p{
+  font-size: 11px;
+  color: #777;
+}
+
 @media (min-width: 768px) and (max-width: 991px){
   .photo-flex{
     width: 20%;
