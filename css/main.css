@@ -231,30 +231,37 @@ footer{
     display: flex;
     flex-direction: column;
 }
-
-footer > img{
+footer > .bloc1{
+display: flex;
+flex-direction: column;
+}
+footer > .bloc1 > img{
   justify-content: center;
   margin: auto;
 }
 
-footer > p{
+footer > .bloc1, .bloc2 > p{
   text-align: center;
+  font-size: 12px;
 }
-
-footer > form{
+footer > .bloc2{
+  display: flex;
+  flex-direction: column;
+}
+footer > .bloc2 > form{
   justify-content: center;
   margin: auto;
   padding-bottom: 1%;
 }
 
-footer > .logo-liens{
+footer > .bloc2 > .logo-liens{
   justify-content: center;
   margin: auto;
 }
-
-footer > p {
-  font-size: 12px;
+footer > .liens-deroulant > .bloc3, .bloc4, .bloc5 {
+  text-align: center;
 }
+
 
 
 /*CSS blog.html*/
@@ -327,34 +334,49 @@ footer > p {
 .content > .logolien > img {
   float: right;
 }
-.content > .formulaire {
-  width: 100%;
+.liste-footer{
+  display: none;
 }
-.content > .formulaire > form {
-  background-color: #f5f5f5;
-  max-width: 80%;
-}
-.content > .formulaire > form > input{
-  background-color: white;
-  width: 97%;
-  height: 5%;
-  border-top: 0;
-  border-left: 0;
-}
-.content > .formulaire > form > label{
-  font-size: 10px;
-}
+
 @media (min-width: 768px) and (max-width: 991px){
   .photo-flex{
     width: 20%;
   }
+  footer > .liens-deroulant{
+    display: flex;
+    justify-content: space-around;
+  }
+  footer > .bloc2{
+    order: 1;
+  }
+
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .photo-flex{
     width: 20%;
   }
+  footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  footer > .bloc2{
+    order: 1;
+    width: 30%;
+  }
+  .liens-deroulant{
+    display: flex;
+    margin: auto;
+  }
+  footer > .liens-deroulant > .bloc3, .bloc4{
+    margin-right: 10%
+  }
+
+  
+
 }
+
 
 @media (min-width: 1200px) {
   .liens-left{
