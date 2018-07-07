@@ -136,12 +136,15 @@ header{
 .liens{
   align-self: flex-start;
   display: none;
+  margin: 1%;
 }
 
 .liens > a{
   text-decoration: none;
   color: gray;
   font-size: 12px;
+  margin-left: 1%;
+
 }
 
 .nav{
@@ -170,49 +173,63 @@ header{
   flex-direction: column;
   max-width: 660px;
   height: auto;
+  margin-top: 6px;
+
+}
+.row1{
+  display: flex;
+}
+.row1 > .image-f{
+  width: 50%;
+  text-align: center;
+}
+.row2 > .image-f{
+  width: 50%;
+  text-align: center;
+}
+.row2 > .image-f > img{
+  width: 99%;
 }
 
+.row1 > .image-f > img{
+  width: 100%;
+}
+.row2{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
 .content > .global > .pub > img{
   max-width: 100%;
 }
 
 .global{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
+  flex-direction: column;
+  align-items: flex-start;
 
-.photo-flex{
-  height: 497px;
-  margin-bottom: 10%;
-  width: 50%;
-}
 
-.photo-flex > div{
-  max-width: 224px;
-  box-shadow: 0px 5px 5px gray;
 }
-
-.photo-flex > div > p{
-  text-align: center;
-}
-
-.photo-flex > div > img{
+.content > .global > .images2 > div > img {
   width: 100%;
 }
-
-.photo-flex > div > .color-red{
-  color: #953061;
-}
-
-.photo-flex > div > .italic{
-  font-style: italic;
-  color: #4f4444;
-}
-
-.photo-flex > img{
-  width: 100%;
+.content > .global > .row1{
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.content > .global > .images2{
+  display: none;
+
+}
+
+.content > .global > .image-f > img{
+  width: 100%;
+}
+
+.photo{
+  width: 35%;
+  margin: 0 auto;;
 }
 
 .info > .size{
@@ -224,6 +241,7 @@ header{
 .info{
   font-size: 16px;
   color: #777777;
+  margin: 1%;
 }
 
 footer{
@@ -367,9 +385,15 @@ hr{
   display: none;
 }
 
+.article > .liste-liens > p{
+  margin-left: 30%;
+}
+
 @media (min-width: 768px) and (max-width: 991px){
-  .photo-flex{
-    width: 20%;
+  .content > .global > .images2{
+    display: flex;
+    flex-direction: column;
+
   }
   footer > .liens-deroulant{
     display: flex;
@@ -383,38 +407,47 @@ hr{
   .content > .block1, .block2, .block3 {
     max-width: 70%;
   }
+
   .article{
     display: flex;
     flex-direction: row;
   }
+
   .article > .liste-liens > .title{
     font-weight: bold;
     color: Black;
   }
+
   .article > .liste-liens > p{
     font-size: 11px;
     color: #777;
   }
+
   .article > .liste-liens > ul > li{
     list-style: none;
   }
+
   .article > .liste-liens{
     margin-right: 7%;
     display: flex;
     flex-direction: column;
   }
+
   .content > .block2 > img {
     width: 60%;
     float: left;
   }
+
   .content-blog{
     margin-left: 10%;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  .photo-flex{
-    width: 20%;
+  .content > .global > .images2{
+    display: flex;
+    flex-direction: column;
+
   }
 
   footer{
@@ -494,7 +527,7 @@ hr{
   }
 
   .pub{
-    width: 430px;
+    width: 750px;
   }
 
   .block{
@@ -504,7 +537,18 @@ hr{
   .block > .info {
     margin:1%;
   }
+  .content > .global > .images2{
+    display: flex;
+    flex-direction: column;
+  }
 
+  .global{
+    flex-direction: row;
+  }
+
+  .row2 > .image-f{
+    width: 210px;
+  }
 
   /*CSS blog*/
   .content > .block1, .block2, .block3 {
