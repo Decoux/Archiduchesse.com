@@ -176,17 +176,25 @@ header{
   margin-top: 6px;
 
 }
+
 .row1{
   display: flex;
 }
+
 .row1 > .image-f{
-  width: 50%;
+  width: 49%;
   text-align: center;
+  box-shadow: 0px 5px 5px gray;
+  margin-bottom: 1%;
 }
+
 .row2 > .image-f{
-  width: 50%;
+  width: 49%;
   text-align: center;
+  box-shadow: 0px 5px 5px gray;
+  margin-bottom: 1%;
 }
+
 .row2 > .image-f > img{
   width: 99%;
 }
@@ -194,11 +202,13 @@ header{
 .row1 > .image-f > img{
   width: 100%;
 }
+
 .row2{
   display: flex;
   flex-wrap: wrap;
   width: 100%;
 }
+
 .content > .global > .pub > img{
   max-width: 100%;
 }
@@ -207,29 +217,38 @@ header{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
-
 }
+
 .content > .global > .images2 > div > img {
   width: 100%;
 }
+
 .content > .global > .row1{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
+
 .content > .global > .images2{
   display: none;
-
 }
 
 .content > .global > .image-f > img{
   width: 100%;
 }
 
+.content > .global > .row1 >  .image-f > .color-red{
+  color:#882125;
+}
+
+.content > .global > .row1 >  .image-f > .italic{
+  font-style: italic;
+}
+
 .photo{
   width: 35%;
-  margin: 0 auto;;
+  margin: 0 auto;
+  display: flex;
 }
 
 .info > .size{
@@ -322,58 +341,58 @@ hr{
   color: #777;
 }
 
-.content > .block1{
+.content-blog > .block1{
   width: 100%
 }
 
-.content > .block1 > img{
+.content-blog > .block1 > img{
   width: 100%;
 }
 
-.content > .block2{
+.content-blog > .block2{
   width: 100%
 }
 
-.content > .block2 > img{
+.content-blog > .block2 > img{
   width: 100%;
 }
 
-.article > .content > .block2 > p{
+.article > .content-blog > .block2 > p{
   font-size: 11px;
   color: #777;
 }
 
-.content > .block3{
+.content-blog > .block3{
   width: 100%
 }
 
-.content > .block3 > img{
+.content-blog > .block3 > img{
   width: 100%;
 }
 
-.article > .content > .block3 > p{
+.article > .content-blog > .block3 > p{
   font-size: 11px;
   color: #777;
 }
 
-.content > .block4{
+.content-blog > .block4{
   width: 100%
 }
 
-.content > .block4 > iframe{
+.content-blog > .block4 > iframe{
   max-width: 100%;
 }
 
-.article > .content > .block4 > p{
+.article > .content-blog > .block4 > p{
   font-size: 11px;
   color: #777;
 }
 
-.content > .logolien {
+.content-blog > .logolien {
   width: 100%;
 }
 
-.content > .logolien > img {
+.content-blog > .logolien > img {
   float: right;
 }
 
@@ -393,18 +412,19 @@ hr{
   .content > .global > .images2{
     display: flex;
     flex-direction: column;
-
   }
+
   footer > .liens-deroulant{
     display: flex;
     justify-content: space-around;
   }
+
   footer > .bloc2{
     order: 1;
   }
 
   /*CSS blog*/
-  .content > .block1, .block2, .block3 {
+  .content-blog > .block1, .block2, .block3 {
     max-width: 70%;
   }
 
@@ -433,7 +453,7 @@ hr{
     flex-direction: column;
   }
 
-  .content > .block2 > img {
+  .content-blog > .block2 > img {
     width: 60%;
     float: left;
   }
@@ -441,13 +461,19 @@ hr{
   .content-blog{
     margin-left: 10%;
   }
+
+  .photo{
+    display: inline-flex;
+    margin: 0 auto;
+    width: 49%;
+  }
+
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .content > .global > .images2{
     display: flex;
     flex-direction: column;
-
   }
 
   footer{
@@ -470,8 +496,19 @@ hr{
     margin-right: 10%
   }
 
+  .click{
+  margin-left: 7%;
+  }
+
+
+  .photo{
+    display: inline-flex;
+    margin: 0 auto;
+    width: 49%;
+  }
+
   /*CSS blog*/
-  .article > .content > .block1, .block2, .block3 {
+  .article > .content-blog > .block1, .block2, .block3 {
     max-width: 70%;
   }
 
@@ -499,13 +536,16 @@ hr{
     display: flex;
     flex-direction: column;
   }
-  .content > .block2 > img {
+
+  .content-blog > .block2 > img {
     width: 30%;
     float: left;
   }
+
   .content-blog{
     margin-left: 10%;
   }
+
 }
 
 
@@ -550,8 +590,18 @@ hr{
     width: 210px;
   }
 
+  .click{
+  margin-left: 10%;
+  }
+
+  .photo{
+    display: inline-flex;
+    margin: 0 auto;
+    width: 49%;
+  }
+
   /*CSS blog*/
-  .content > .block1, .block2, .block3 {
+  .content-blog > .block1, .block2, .block3 {
     max-width: 70%;
   }
 
@@ -579,7 +629,7 @@ hr{
     display: flex;
     flex-direction: column;
   }
-  .content > .block2 > img {
+  .content-blog > .block2 > img {
     width: 20%;
     float: left;
   }
@@ -607,15 +657,6 @@ hr{
   }
 
 }
-
-
-
-
-
-
-
-
-
 
 /* ==========================================================================
    Helper classes
